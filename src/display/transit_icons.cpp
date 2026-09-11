@@ -3,10 +3,10 @@
 const byte *getTransitIcon(TransitType type, size_t &size)
 {
 	switch (type) {
-	case TransitType::SBahn:
-		size = sizeof(citytrain);
-		return citytrain;
-	case TransitType::UBahn:
+	case TransitType::Suburban:
+		size = sizeof(suburban);
+		return suburban;
+	case TransitType::Subway:
 		size = sizeof(subway);
 		return subway;
 	case TransitType::Tram:

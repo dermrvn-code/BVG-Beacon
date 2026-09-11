@@ -35,7 +35,7 @@ void renderPage()
     displayTrain(120, "U2", 30, TransitType::UBahn);
     break;
   case 1:
-    displayTrain(300, "S5", 60, TransitType::SBahn);
+    displayTrain(300, "S5", 60, TransitType::Suburban);
     break;
   case 2:
     displayTrain(90, "M4", 15, TransitType::Tram);

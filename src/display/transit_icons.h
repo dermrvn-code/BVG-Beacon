@@ -4,8 +4,8 @@
 #include "icons.h"
 
 enum class TransitType : uint8_t {
-	SBahn,
-	UBahn,
+	Suburban,
+	Subway,
 	Tram,
 	Bus,
 	Ferry
