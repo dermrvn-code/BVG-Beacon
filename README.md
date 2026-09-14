@@ -445,6 +445,7 @@ BVG Beacon uses the following open-source libraries and services:
 * [PNGdec](https://github.com/bitbank2/PNGdec) by Larry Bank — PNG image decoding
 * [WiFiManager](https://github.com/tzapu/WiFiManager) by tzapu — Wi-Fi configuration portal and access-point setup
 * [BVG transport REST API](https://v6.bvg.transport.rest/) — public transport data
+* [ArduinoJson](https://arduinojson.org/) by Benoit Blanchon — JSON parsing and serialization
 
 The project also uses the [Espressif RISC-V toolchain package](https://registry.platformio.org/tools/platformio/toolchain-riscv32-esp) provided through PlatformIO.
 
