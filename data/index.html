@@ -1,20 +1,54 @@
-<!doctype html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>BVG Beacon</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <main>
-            <h1>BVG Beacon</h1>
-            <p>Wi-Fi configuration</p>
-            <p>Reset WiFi Manager to configure a different network.</p>
-            <form method="post" action="/reset-wifi">
-                <button type="submit">Reset Wi-Fi settings</button>
-            </form>
-        </main>
-    </body>
+<!-- @format -->
 
-    <script src="main.js"></script>
+<!doctype html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>BVG Beacon</title>
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	</head>
+
+	<body>
+		<main>
+			<h1>BVG Beacon</h1>
+
+			<h3>
+				Stations Setup
+				<span id="station-count">0/10</span>
+			</h3>
+
+			<div class="station-selection">
+				<div class="carousel">
+					<div class="carousel-controls">
+						<button type="button" class="carousel-control deactive" id="previous">
+							Previous
+						</button>
+
+						<button type="button" class="carousel-control" id="next">Next</button>
+					</div>
+
+					<!-- Generated automatically -->
+					<div class="carousel-track"></div>
+
+					<!-- Generated automatically -->
+					<div class="carousel-items"></div>
+				</div>
+			</div>
+
+			<span class="bar"></span>
+
+			<h3>Wi-Fi Configuration</h3>
+
+			<form method="post" action="/reset-wifi">
+				<button type="submit">Reset Wi-Fi settings</button>
+			</form>
+		</main>
+
+		<script src="main.js"></script>
+	</body>
 </html>
